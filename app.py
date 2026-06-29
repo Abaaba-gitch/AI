@@ -65,7 +65,7 @@ def init_tracking_system():
     try:
         import os
         base_dir = os.path.dirname(os.path.abspath(__file__))
-        model_path = os.path.join(base_dir, 'runs', 'detect', 'a4000_traffic_train_filtered4', 'weights', 'best.pt')
+        model_path = os.path.join(base_dir, 'best.pt')
         print(f"模型路径: {model_path}")
         print(f"模型文件存在: {os.path.exists(model_path)}")
         tracking_system = TrackingSystem(model_path)
